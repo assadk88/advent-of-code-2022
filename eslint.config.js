@@ -22,8 +22,8 @@ const config = [
       'no-console': 'warn',
       'object-shorthand': ['error', 'always'],
       'prefer-template': 'error',
-      'eqeqeq': ['error', 'always'],
-      'curly': ['error', 'all'],
+      eqeqeq: ['error', 'always'],
+      curly: ['error', 'all'],
 
       // Functional rules (removed type-dependent rules)
       'arrow-body-style': ['error', 'always'],
@@ -43,7 +43,6 @@ const config = [
       'coverage/**',
       'build/**',
       '*.min.js'
-
     ]
   }
 ];
