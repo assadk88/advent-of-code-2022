@@ -34,7 +34,7 @@ To execute the tests for a given year perform:
 
 ```SHELL
 # npm run test:<year>
-npm run test:2023
+npm run test:2024
 ```
 
 ### Verifying solutions by specific challenge
@@ -42,5 +42,5 @@ npm run test:2023
 To execute the test associated with a specific challenge, you must specify its file path. For example to execute the test for the first challenge in 2023's Advent of Code you would perform:
 
 ```
-NODE_OPTIONS=--experimental-vm-modules npx jest test --runTestsByPath src/2023/01/main.test.js
+npm run test src/2024/01/main.test.js
 ```
