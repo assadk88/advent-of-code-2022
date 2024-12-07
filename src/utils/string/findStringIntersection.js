@@ -12,10 +12,10 @@ export const findStringIntersection = function (array) {
   c = c.split('');
 
   return a
-    .filter((v) => {
+    .filter(v => {
       return b.includes(v);
     })
-    .filter((v) => {
+    .filter(v => {
       return c.includes(v);
     })[0];
 };

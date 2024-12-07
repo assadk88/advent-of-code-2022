@@ -3,27 +3,27 @@ import { charCodeToAlphabetPosition } from '../../utils/string/charCodeToAlphabe
 import { findStringIntersection } from '../../utils/string/findStringIntersection';
 import { splitStringElementIntoTwoArrays } from '../../utils/string/splitStringElementIntoTwoArrays';
 
-export const format = (data) => {
+export const format = data => {
   return data.trim().split('\n');
 };
 
-export const part1 = (input) => {
+export const part1 = input => {
   const data = format(input);
 
   return data
-    .map((x) => {
+    .map(x => {
       return splitStringElementIntoTwoArrays(x);
     })
-    .map((array) => {
+    .map(array => {
       let [SubArrayA, SubArrayB] = array;
       SubArrayA = [...new Set(SubArrayA)];
       SubArrayB = [...new Set(SubArrayB)];
-      return SubArrayB.filter((value) => {
+      return SubArrayB.filter(value => {
         return SubArrayA.includes(value);
       });
     })
     .flat()
-    .map((y) => {
+    .map(y => {
       return charCodeToAlphabetPosition(y);
     })
     .reduce((i, a) => {
@@ -31,15 +31,15 @@ export const part1 = (input) => {
     });
 };
 
-export const part2 = (input) => {
+export const part2 = input => {
   const data = chunkArray(format(input), 3);
 
   return data
-    .map((x) => {
+    .map(x => {
       return findStringIntersection(x);
     })
     .flat()
-    .map((y) => {
+    .map(y => {
       return charCodeToAlphabetPosition(y);
     })
     .reduce((i, a) => {

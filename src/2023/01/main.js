@@ -1,15 +1,15 @@
-const format = (input) => {
+const format = input => {
   return input.trim().split('\n');
 };
 
-const extractNumbersFromLine = (line) => {
-  const firstNumber = line.filter((char) => {
+const extractNumbersFromLine = line => {
+  const firstNumber = line.filter(char => {
     return (
       typeof parseInt(char, 10) === 'number' &&
       !Number.isNaN(parseInt(char, 10))
     );
   });
-  const lastNumber = line.reverse().filter((char) => {
+  const lastNumber = line.reverse().filter(char => {
     return (
       typeof parseInt(char, 10) === 'number' &&
       !Number.isNaN(parseInt(char, 10))
@@ -58,21 +58,21 @@ const numbersMapping = {
   ten: 10
 };
 
-const convertStringRepresentationToNumber = (number) => {
+const convertStringRepresentationToNumber = number => {
   return typeof parseInt(number) === 'number' && !Number.isNaN(parseInt(number))
     ? parseInt(number)
     : numbersMapping[number];
 };
 
-export const part1 = (input) => {
+export const part1 = input => {
   return format(input)
-    .map((line) => {
+    .map(line => {
       return line.split('');
     })
-    .map((charSplitLine) => {
+    .map(charSplitLine => {
       return extractNumbersFromLine(charSplitLine);
     })
-    .map((tuple) => {
+    .map(tuple => {
       return parseInt(tuple, 10);
     })
     .reduce((acc, iv) => {
@@ -80,20 +80,20 @@ export const part1 = (input) => {
     });
 };
 
-export const part2 = (input) => {
+export const part2 = input => {
   const formattedInput = format(input);
-  formattedInput.map((line) => {
+  formattedInput.map(line => {
     return numbers.slice(8);
   });
   console.log(
     formattedInput
-      .map((line) => {
-        return numbers.map((number) => {
+      .map(line => {
+        return numbers.map(number => {
           return line.includes(number) ? number : '';
         });
       })
-      .map((line) => {
-        return line.filter((lineItem) => {
+      .map(line => {
+        return line.filter(lineItem => {
           return lineItem;
         });
       })

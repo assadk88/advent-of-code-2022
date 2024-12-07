@@ -1,4 +1,4 @@
-export const format = (data) => {
+export const format = data => {
   return data.trim().split('\n');
 };
 
@@ -12,7 +12,7 @@ const replace = function (data, permutations) {
   return str;
 };
 
-export const part1 = (input) => {
+export const part1 = input => {
   const data = format(input);
 
   const PERMUTATIONS = new Map([
@@ -28,10 +28,10 @@ export const part1 = (input) => {
   ]);
 
   return data
-    .map((x) => {
+    .map(x => {
       return replace(x, PERMUTATIONS);
     })
-    .map((y) => {
+    .map(y => {
       return parseInt(y);
     })
     .reduce((acc, val) => {
@@ -39,7 +39,7 @@ export const part1 = (input) => {
     });
 };
 
-export const part2 = (input) => {
+export const part2 = input => {
   const data = format(input);
 
   const PERMUTATIONS = new Map([
@@ -55,10 +55,10 @@ export const part2 = (input) => {
   ]);
 
   return data
-    .map((x) => {
+    .map(x => {
       return replace(x, PERMUTATIONS);
     })
-    .map((y) => {
+    .map(y => {
       return parseInt(y);
     })
     .reduce((acc, val) => {

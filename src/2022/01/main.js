@@ -1,18 +1,18 @@
-export const format = (data) => {
+export const format = data => {
   return data
     .trim()
     .split('\n\n')
-    .map((x) => {
-      return x.split('\n').map((y) => {
+    .map(x => {
+      return x.split('\n').map(y => {
         return parseInt(y);
       });
     });
 };
 
-export const part1 = (input) => {
+export const part1 = input => {
   const data = format(input);
   return data
-    .map((x) => {
+    .map(x => {
       return x.reduce((y, z) => {
         return y + z;
       });
@@ -22,10 +22,10 @@ export const part1 = (input) => {
     })[0];
 };
 
-export const part2 = (input) => {
+export const part2 = input => {
   const data = format(input);
   return data
-    .map((x) => {
+    .map(x => {
       return x.reduce((y, z) => {
         return y + z;
       });

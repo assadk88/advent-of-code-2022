@@ -1,3 +1,4 @@
+import { describe, test, expect } from 'vitest';
 import { format, part1, part2 } from './main';
 import { input } from './input';
 
