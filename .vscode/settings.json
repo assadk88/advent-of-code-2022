@@ -5,7 +5,9 @@
   "editor.semanticHighlighting.enabled": true,
   "breadcrumbs.enabled": true,
   "editor.parameterHints.enabled": false,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "extensions.ignoreRecommendations": true,
   // "editor.renderLineHighlight": "gutter",
   "editor.cursorStyle": "block",
@@ -15,63 +17,57 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.wordWrap": "on",
-
   // Workbench
   "workbench.editor.labelFormat": "short",
   "workbench.startupEditor": "none",
-  // "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "workbench.sideBar.location": "left",
   "workbench.tree.indent": 21,
-
   // Fonts
   "editor.fontSize": 22,
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   // "editor.lineHeight": 26,
   // "editor.fontFamily": "Droid Sans Mono"
-
   // Terminal
   "terminal.integrated.fontSize": 17,
-
   // Folders
   "explorer.compactFolders": false,
+  // Files
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
     "**/node_modules": true
   },
-
-  // Files
   "explorer.confirmDelete": true,
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 500,
-  "files.trimTrailingWhitespace": true,
-  "files.trimFinalNewlines": true,
-  "files.insertFinalNewline": true,
   "files.associations": {
     // ".stylelintrc": "json",
     // "*.tsx": "typescriptreact",
     // ".env.*": "dotenv"
   },
+  // Format & Lint
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": [
     "javascript",
     "javascriptreact"
     // add other languages if needed
   ],
-
-  // Format
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "prettier.configPath": ".prettierrc.json",
-
   // Javascript
   // "typescript.tsserver.log": "off",
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  // Emmet
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
