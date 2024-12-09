@@ -2,10 +2,10 @@
 
 | Puzzle | My Solution | Topic(s) | Difficulty | Notes |
 |--------|-------------|----------|------------|-------|
-| [Day 1 Challenge](https://adventofcode.com/2023/day/1) | [Solution](#) |  |  |  |
-| [Day 2 Challenge](https://adventofcode.com/2023/day/2) | [Solution](#) |  |  |  |
-| [Day 3 Challenge](https://adventofcode.com/2023/day/3) | [Solution](#) |  |  |  |
-| [Day 4 Challenge](https://adventofcode.com/2023/day/4) | [Solution](#) |  |  |  |
+| [Day 1 Challenge](https://adventofcode.com/2023/day/1) | [Solution](#) |  | 🟢 Easy |  |
+| [Day 2 Challenge](https://adventofcode.com/2023/day/2) | [Solution](#) |  | 🔴 Hard |  |
+| [Day 3 Challenge](https://adventofcode.com/2023/day/3) | [Solution](#) |  | 🔴 Hard |  |
+| [Day 4 Challenge](https://adventofcode.com/2023/day/4) | [Solution](#) |  | 🟡 Medium |  |
 | [Day 5 Challenge](https://adventofcode.com/2023/day/5) | [Solution](#) |  |  |  |
 | [Day 6 Challenge](https://adventofcode.com/2023/day/6) | [Solution](#) |  |  |  |
 | [Day 7 Challenge](https://adventofcode.com/2023/day/7) | [Solution](#) |  |  |  |
