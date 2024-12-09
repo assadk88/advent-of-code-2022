@@ -11,8 +11,7 @@ describe('2023', () => {
 
     test('Part 2', () => {
       const result = part2(input);
-      console.log(result); // Display console output
-      // expect(result).toBe(206104);
+      expect(result).toBe(206104);
     });
   });
 });

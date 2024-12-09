@@ -3,7 +3,7 @@ import { part1, part2 } from './main';
 import { input } from './input';
 
 describe('2023', () => {
-  describe('Day 1', () => {
+  describe('Day 2', () => {
     test('Part 1', () => {
       const result = part1(input);
       console.log(result);

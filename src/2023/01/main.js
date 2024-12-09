@@ -1,6 +1,4 @@
-const format = input => {
-  return input.trim().split('\n');
-};
+import { AOC } from "@assadk/aoc-utils";
 
 const extractNumbersFromLine = line => {
   const firstNumber = line.filter(char => {
@@ -65,7 +63,7 @@ const convertStringRepresentationToNumber = number => {
 };
 
 export const part1 = input => {
-  return format(input)
+  return AOC.parseInput(input)
     .map(line => {
       return line.split('');
     })
@@ -81,7 +79,7 @@ export const part1 = input => {
 };
 
 export const part2 = input => {
-  const formattedInput = format(input);
+  const formattedInput = AOC.parseInput(input);
   formattedInput.map(line => {
     return numbers.slice(8);
   });

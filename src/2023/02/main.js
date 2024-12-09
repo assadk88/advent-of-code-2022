@@ -1,9 +1,7 @@
-const format = input => {
-  return input.trim().split('\n');
-};
+import { AOC } from "@assadk/aoc-utils";
 
 export const part1 = input => {
-  return format(input)
+  return AOC.parseInput(input)
     .map(line => {
       return line.replace(/Game\s\d+:\s/g, '');
     })
@@ -18,4 +16,4 @@ export const part1 = input => {
     });
 };
 
-export const part2 = input => {};
+export const part2 = input => { };
