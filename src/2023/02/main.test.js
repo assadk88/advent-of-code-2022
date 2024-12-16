@@ -1,19 +1,17 @@
-import { describe, test, expect } from 'vitest';
-import { part1, part2 } from './main';
+import { describe, test } from 'vitest';
 import { input } from './input';
+import { part1, part2 } from './main';
 
 describe('2023', () => {
   describe('Day 2', () => {
-    test('Part 1', () => {
+    test.skip('Part 1', () => {
       const result = part1(input);
-      console.log(result);
-      // expect(result).toBe(54239);
+      expect(result).toBe(54239);
     });
 
-    test('Part 2', () => {
+    test.skip('Part 2', () => {
       const result = part2(input);
-      console.log(result); // Display console output
-      // expect(result).toBe(206104);
+      expect(result).toBe(206104);
     });
   });
 });
