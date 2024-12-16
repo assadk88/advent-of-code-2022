@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ZixuanChen.vitest-explorer",
+    "christian-kohler.npm-intellisense"
+  ]
+}
